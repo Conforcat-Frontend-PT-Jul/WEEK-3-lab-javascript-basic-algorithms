@@ -1,6 +1,9 @@
 // Iteration 1: Names and Input
+const hacker1 = "Maria";
+console.log(`The driver's name is ${hacker1}`);
 
-console.log("I'm ready!");
+const hacker2 = "Anna";
+console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
 
