@@ -21,8 +21,10 @@ hacker1.split("").forEach(letter => {
     haker1ToUpperCaseAndSpaced += letter.toUpperCase() + " ";
 })
 console.log(haker1ToUpperCaseAndSpaced);
+
 const haker1Reverse = hacker1.split("").reverse().join("");
 console.log(haker1Reverse);
+
 if (hacker1.toLowerCase() < hacker2.toLowerCase()) {
     console.log("The driver's name goes first");
 }
