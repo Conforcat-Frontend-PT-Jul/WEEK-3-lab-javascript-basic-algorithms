@@ -4,3 +4,5 @@
 
 
 // Iteration 3: Loops
+let nombre = "Lua" 
+console.log(nombre)
