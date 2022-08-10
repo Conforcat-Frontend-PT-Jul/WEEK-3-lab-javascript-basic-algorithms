@@ -2,15 +2,25 @@ console.log("I'm ready!");
 
 // Iteration 1: Names and Input
 
+// 1.1.
+
 let hacker1 = 'Alicia';
+
+// 1.2.
 
 console.log(`The driver's name is ${hacker1}`);
 
+// 1.3.
+
 let hacker2 = 'Sergio';
+
+// 1.4.
 
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
+
+// 2.1.
 
 if (hacker1.length > hacker2.length) {
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
@@ -55,3 +65,13 @@ let navigatorReverse = hacker2.split("").reverse().join("");
 console.log("Resultado con funciones:", navigatorReverse);
 
 // 3.3.
+
+if (hacker1 === hacker2) {
+    console.log("What?! You both have the same name?");
+  } else if (hacker1 < hacker2) {
+    console.log("The driver's name goes first.");
+  } else {
+    console.log("Yo, the navigator goes first definitely.");
+  }
+
+  // BONUS 1
