@@ -106,3 +106,17 @@ for (i=0; i < loremIpsumList.length; i++) {
 }
 
 console.log(`Number of times word "et" appear: ${count}`);
+
+// BONUS 2
+
+let phraseToCheck = "No 'x' in Nixon";
+
+let wordToCheck = phraseToCheck.toLowerCase().replaceAll(/[\s+,.!?']/g, "");
+
+let wordPalindrome = wordToCheck.split("").reverse().join("");
+
+if (wordToCheck === wordPalindrome) {
+    console.log(`The phrase: ${phraseToCheck}, is a Palindrome`);
+} else {
+    console.log(`Ups!!! Sorry...Try again! The phrase: ${phraseToCheck}, is not a Palindrome`);
+}
