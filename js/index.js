@@ -51,10 +51,27 @@ Praesent turpis nisl, interdum quis arcu rutrum, dapibus iaculis risus. Praesent
 
 console.log(loremIpsum.split(" ").length);
 
-let counter = 0; 
+let counter = 0;
 for (let i = 0; i < loremIpsum.split(" ").length; i++) {
-    if (loremIpsum.split(" ")[i] === "et"){
-        counter++;
-    };
-};
+  if (loremIpsum.split(" ")[i] === "et") {
+    counter++;
+  }
+}
 console.log(counter);
+
+// BONUS 2.
+const phraseToCheck = "A man, a plan, a canal, Panama!";
+
+function isPalindrome(str) {
+  var re = /[^A-Za-z0-9]/g;
+  str = str.toLowerCase().replace(re, "");
+  var strLen = str.length;
+  for (var i = 0; i < strLen / 2; i++) {
+    if (str[i] !== str[strLen - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isPalindrome(phraseToCheck));
