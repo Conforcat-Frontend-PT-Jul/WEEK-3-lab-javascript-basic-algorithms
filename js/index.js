@@ -22,3 +22,41 @@ if( hacker1.length > hacker2.length ){
   console.log(`Wow, you both have equally long names, ${hacker1.length} characters`)
 }
 
+// ITERATION 3
+
+const driver = "Thor";
+const navigator = "Thanos";
+
+// const splittedDriver = driver.split('');
+// console.log(splittedDriver.join(' ').toUpperCase());
+
+// const splittedNavigator = navigator.split('');
+// console.log(splittedNavigator.reverse().join(''));
+
+// 3.1
+
+let printDriver = "";
+for(let i= 0; i<driver.length; i++){
+ printDriver += driver[i].toUpperCase() + " ";
+}
+console.log(printDriver);
+
+// 3.2
+
+let printNavigator = "";
+for(let j = driver.length -1; j>=0; j--){
+ printNavigator += driver[j];
+}
+console.log(printNavigator);
+
+
+// 3.3
+
+if (driver > navigator){
+  console.log("Yo, the navigator goes first definitely");
+} else if (driver < navigator){
+  console.log("The driver's name goes first.");
+} else if(driver === navigator){
+  console.log("What?! You both have the same name?")
+}
+
