@@ -37,7 +37,7 @@ separated by a space and in capitals i.e. "J O H N"*/
     let nameReverse = "";
     let nameLenght = nameText.length -1;
 
-    for(let i = nameLenght; i >= nameLenght; i--) {
+    for(let i = nameLenght; i >= 0; i--) {
         nameReverse += nameText[i];
         console.log(nameReverse.toUpperCase());
     }
