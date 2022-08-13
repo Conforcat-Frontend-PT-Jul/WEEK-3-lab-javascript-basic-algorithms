@@ -21,6 +21,11 @@ else{
 }
 // Iteration 3: Loops
 
-for(i=0;i<hacker1.length,i++){
-    console.log(hacker[i].toUpperCase);
-}
+//3.1
+
+const Upper = hacker1.split('').join(' ').toUpperCase();
+console.log(Upper);
+
+//3.2
+
+const reverse = hacker2.split("").reverse().join("");
