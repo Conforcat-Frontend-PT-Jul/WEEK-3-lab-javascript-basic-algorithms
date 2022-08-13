@@ -2,7 +2,7 @@ console.log("I'm ready!");
 
 // Iteration 1: Names and Input
 
-const hacker1 = "Ada"
+const hacker1 = "Jelizaveta"
 
 console.log(`The driver's name is ${hacker1}`)
 
@@ -25,9 +25,30 @@ if (driverLength > navigatorLength) {
 
 // Iteration 3: Loops
 
-console.log(hacker1.toUpperCase().split("").join(" "))
+//3.1
 
-console.log(hacker2.split("").reverse().join(""))
+// console.log(hacker1.toUpperCase().split("").join(" "))
+
+let str = '';
+
+for (let i = 0; i < hacker1.length; i++) {
+    str += hacker1[i].toUpperCase() + " ";
+}
+console.log(str);
+
+//3.2
+
+// console.log(hacker2.split("").reverse().join(""))
+
+let reversedStr = '';  
+
+for(i = hacker2.length - 1; i >= 0; i--){
+  reversedStr += hacker2[i];
+}
+
+console.log(reversedStr);
+
+//3.3 
 
 if (hacker1 < hacker2) {
     console.log("The driver's name goes first")
@@ -36,3 +57,5 @@ if (hacker1 < hacker2) {
 } else if (hacker1 === hacker2) {
     console.log("What?! You both have the same name?")
 }
+
+
