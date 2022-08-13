@@ -36,5 +36,3 @@ if (hacker1 < hacker2) {
 } else if (hacker1 === hacker2) {
     console.log("What?! You both have the same name?")
 }
-
-
