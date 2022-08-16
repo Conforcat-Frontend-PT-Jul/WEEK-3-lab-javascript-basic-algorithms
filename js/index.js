@@ -29,3 +29,28 @@ console.log(Upper);
 //3.2
 
 const reverse = hacker2.split("").reverse().join("");
+console.log(reverse);
+
+//3.3
+let lista = [hacker1,hacker2];
+
+lista.sort();
+
+if(lista[0]===hacker1){
+
+    console.log(`The driver's name goes first`);
+
+}
+
+else if(lista[0]===hacker2){
+
+    console.log(`Yo, the navigator goes first definitely`);
+
+}
+
+else{
+
+    console.log(`What?! You both have the same name? `);
+
+}
+
