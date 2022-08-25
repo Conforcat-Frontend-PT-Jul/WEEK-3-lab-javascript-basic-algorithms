@@ -6,22 +6,22 @@ console.log("I´m ready!")
 const hacker1 = "Jack"
 
 //1.2
-console.log(`The driver´s name is: ${hacker1}`)
+console.log("The driver´s name is:" + hacker1)
 //1.3
 
 const hacker2 = "Bob"
 
 //1.4
-console.log(`The navigator´s name is: ${hacker2}`)
+console.log("The navigator´s name is:" +hacker2)
 
 // Iteration 2: Conditionals
 // Iteration 2.1: Conditionals
 
 if (hacker1.length > hacker2.length) {
-  console.log(`The driver has the longest name, it has: ${hacker1.length} characters.`);
+  console.log("The driver has the longest name, it has: " + hacker1.length + " " + "characters.");
 }
   else if (hacker1.length < hacker2.length) {
-  console.log(`It seems that the navigator has the longest name, it has: ${hacker2.length} characters.`);
+  console.log("It seems that the navigator has the longest name, it has: " + hacker2.length + " " + "characters.");
 }
  else if (hacker1.length === hacker2.length) {
   console.log(`Wow, you both have equally long names with ${hacker2.length} characters!.`);
@@ -34,6 +34,7 @@ if (hacker1.length > hacker2.length) {
 const goUp = hacker1;
 for (const value of goUp) {
   let result = value.toUpperCase();
+//  let final = result.split().join(" ");
   console.log(result);
 }
 
