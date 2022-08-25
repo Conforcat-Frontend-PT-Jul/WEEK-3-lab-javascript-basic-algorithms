@@ -23,7 +23,7 @@ if (hacker1.length > hacker2.length) {
   else if (hacker1.length < hacker2.length) {
   console.log("It seems that the navigator has the longest name, it has: " + hacker2.length + " " + "characters.");
 }
- else if (hacker1.length === hacker2.length) {
+ else {
   console.log(`Wow, you both have equally long names with ${hacker2.length} characters!.`);
 }
 
@@ -31,15 +31,32 @@ if (hacker1.length > hacker2.length) {
 
 //3.1
 
-const goUp = hacker1;
+/*const goUp = hacker1;
 for (const value of goUp) {
   let result = value.toUpperCase();
-//  let final = result.split().join(" ");
-  console.log(result);
+  let final = result.split().join(" ");
 }
+console.log(final);
+*/
+
+let goUp = "";
+ for (let i = 0; i < hacker1.length; i++) {
+   goUp += hacker1[i].toUpperCase() + " ";
+}
+console.log(goUp.trim());
+
+//console.log(hacker1.toUpperCase().split("").join(" "));
 
 // 3.2
-console.log(hacker1.split("").reverse().join(""))
+let goBack = "";
+ for (let i = hacker1.length -1;  i >= 0; i--) {
+   goBack += hacker1[i];
+}
+console.log(goBack);
+
+//console.log(hacker1.toUpperCase().split("").join(" "));
+
+//console.log(hacker1.split("").reverse().join(""))
 
 // 3.3
 
@@ -77,5 +94,3 @@ return count + 1;
 console.log("The number of words in the string are: " + countWords(lorem));
 
 //Bonus 1.3
-
-
